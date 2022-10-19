@@ -1,3 +1,85 @@
 Link para download do Git: https://git-scm.com/download/win
 
 O Git Bash é um terminal extendido para otimizar o uso do Git.
+
+
+Anotações realizadas:
+
+Comandos de navegação:
+
+Listar (entender em qual local do windows estou situada)
+Windows: dir
+Linux: ls
+
+Diretório C: Navega em um local especifico do sistema
+Cd / ---> para o Linux e o Windows
+
+Voltar um caminho na pasta, um diretório: (sair de uma pasta)
+Cd ..  ---> para o Linux e o Windows
+
+Limpar o terminal:
+Windows: cls
+Linux: clear ou "ctrl"+"L"
+
+
+Criar uma pasta:
+Windows: mkdir workspace
+Linux: mkdir workspace
+
+Printar uma frase escrita no terminal:
+Windows: echo hello   --->> Vai printar na tela hello
+
+Criar um arquivo na pasta workspace:
+Windows: C:\workspace>echo hello > hello.txt
+
+Deletar arquivos:
+Windows: del workspace  --->> Questiona se quer apagar tudo que esta na pasta workspace
+
+Deletar pastas:
+Windows: rmdir workspace /S /Q
+
+
+SHA1: Algoritmo de Hash Seguro, é um conjunto de funções hash criptográficas projetadas pela NSA.
+
+É uma forma curta de representar um arquivo. Tem 40 caracteres.
+
+
+BLOBS
+Contem meta dados do git: Tipo do objeto, tamanhado do arquivo, barra ao contrario e o nome do arquivo.
+echo 'conteudo' | git hash-object --stdin
+Tem o Sha1 do arquivo
+
+TREES
+Armazem as blobs e apontam também.
+Guarda também o nome do arquivo
+E pode apontar para outra árvore / diretórios
+
+COMMITS
+
+É o objeto que junta as alterações realizadas
+
+
+Chaves SSH e Tokens - como gerar e add as chaves no GitHub
+
+Chave SSH: É uma forma segura e criptografada de  conectar com o GitHub.
+
+PRIMEIROS COMANDO COM GIT
+
+git init ---> Inicia a autorização do git de gerenciar
+Inicializa o repositório, criação do repositório
+
+ls -a ---> Lista a pasta oculta
+
+
+git add * ---> Iniciar a inclusão de um commit
+Além de colocar o nome do arquivo é possível utilizar apenas o git add *, onde add todas as alterações
+
+git commit -m "[informações inclusas na descrição do commit]"
+
+mv strogonoff.txt ./receitas/  ---> Move o arquivo para a pasta receitas
+
+git status  ---> Mostra as atualizações pendentes e realizadas
+
+
+"ESC" : "Q" ---> Para sair da tela de descrição sem ter feito alterações
+
